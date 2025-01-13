@@ -176,7 +176,11 @@ class FileProcessorApp(QWidget):
     def setup_ui(self):
         self.setGeometry(100, 100, 800, 600)
         self.setFont(QFont('Arial', 10))
-
+        
+        # Pencere ikonu ayarla
+        icon = QIcon('logo.jpeg')  # logo.jpeg dosyasını yükle
+        self.setWindowIcon(icon)  # Pencere ikonu olarak ayarla
+        
         # Layouts
         self.layout = QVBoxLayout()
         self.language_layout = QHBoxLayout()
@@ -444,6 +448,7 @@ class FileProcessorApp(QWidget):
             self.list_files()
 if __name__ == "__main__":
     app = QApplication([])
+    app.setWindowIcon(QIcon('logo.jpeg'))  # Taskbar ikonu için
     window = FileProcessorApp()
     window.show()
     app.exec()
