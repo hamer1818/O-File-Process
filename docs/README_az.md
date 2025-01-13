@@ -26,12 +26,6 @@ git clone https://github.com/hamer1818/file-processor.git
 pip install -r requirements.txt
 ```
 
-3. Tətbiqi işə salın:
-
-```bash
-python main.py
-```
-
 ## İstifadə
 
 1. Tətbiqi işə salın:

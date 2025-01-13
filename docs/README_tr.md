@@ -26,12 +26,6 @@ git clone https://github.com/hamer1818/file-processor.git
 pip install -r requirements.txt
 ```
 
-3. Uygulamayı çalıştırın:
-
-```bash
-python main.py
-```
-
 ## Kullanım
 
 1. Uygulamayı çalıştırın:

@@ -26,11 +26,6 @@ git clone https://github.com/hamer1818/file-processor.git
 pip install -r requirements.txt
 ```
 
-3. 运行应用程序：
-
-```bash
-python main.py
-```
 
 ## 使用方法
 
