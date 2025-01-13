@@ -1,4 +1,4 @@
-# Procesador de Archivos
+# O File Processor
 
 Una aplicación multilingüe de gestión de archivos creada con PyQt6 que permite administrar fácilmente archivos en un directorio.
 

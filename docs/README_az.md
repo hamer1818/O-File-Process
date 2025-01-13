@@ -1,4 +1,4 @@
-# Fayl Prosessor
+# O File Processor
 
 PyQt6 ilə yaradılmış, qovluqdakı faylları asanlıqla idarə etməyə imkan verən çoxdilli fayl idarəetmə tətbiqi.
 

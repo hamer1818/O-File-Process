@@ -1,4 +1,4 @@
-# File Processor
+# O File Processor
 
 A multi-language file management application built with PyQt6 that allows you to easily manage files in a directory.
 

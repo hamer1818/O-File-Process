@@ -1,4 +1,4 @@
-# Dosya İşlemci
+# O File Processor
 
 PyQt6 ile oluşturulmuş, bir dizindeki dosyaları kolayca yönetmenizi sağlayan çok dilli bir dosya yönetim uygulaması.
 
