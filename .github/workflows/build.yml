@@ -14,10 +14,10 @@ jobs:
         python-version: [3.8]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
     
@@ -32,17 +32,18 @@ jobs:
         pyinstaller --onefile --windowed --icon=file_processor/logo.jpeg --add-data "file_processor/logo.jpeg:file_processor" file_processor/main.py
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: file-processor-${{ matrix.os }}
         path: dist/*
+        retention-days: 5
 
   release:
     needs: build
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v4
     
     - name: Create Release
       uses: softprops/action-gh-release@v1
