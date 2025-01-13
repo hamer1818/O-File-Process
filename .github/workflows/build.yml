@@ -8,49 +8,55 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         python-version: [3.9]
 
     steps:
-    - uses: actions/checkout@v4
-    
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-    
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
         pip install -r requirements.txt
-    
+
     - name: Build with PyInstaller
       run: |
         pyinstaller --onefile --windowed --icon=file_processor/logo.jpeg --add-data "file_processor/logo.jpeg:file_processor" file_processor/main.py
-    
-    - name: Upload artifacts
+
+    - name: Upload Binary
       uses: actions/upload-artifact@v4
       with:
-        name: file-processor-${{ matrix.os }}
+        name: ${{ matrix.os }}-binary
         path: dist/*
         retention-days: 5
 
   release:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
-    - uses: actions/download-artifact@v4
-    
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
     - name: Create Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       uses: softprops/action-gh-release@v1
       with:
-        files: |
-          file-processor-ubuntu-latest/*
-          file-processor-windows-latest/*
-          file-processor-macos-latest/*
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        files: artifacts/**/*
+        generate_release_notes: true 
