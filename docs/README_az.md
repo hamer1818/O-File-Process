@@ -1,55 +1,51 @@
 # O File Processor
 
-PyQt6 ilə yaradılmış, qovluqdakı faylları asanlıqla idarə etməyə imkan verən çoxdilli fayl idarəetmə tətbiqi.
+**O File Processor**, peşəkar fayl idarəetməsi üçün müasir, **PyQt6 əsaslı** masaüstü tətbiqidir. Təmiz **MVC arxitekturası** ilə qurulub, toplu adlandırma, kopyalama və təhlükəsiz silmə əməliyyatlarını intuitiv 3 panelli interfeys ilə təqdim edir.
 
-[English](../README.md) | [Türkçe](README_tr.md) | [Español](README_es.md) | [Русский](README_ru.md) | [中文](README_zh.md)
+[![GitHub](https://img.shields.io/badge/GitHub-hamer1818%2FO--File--Process-blue?logo=github)](https://github.com/hamer1818/O-File-Process)
 
-## Xüsusiyyətlər
+---
 
-- Ada görə fayl filtrasiyası
-- Birdən çox faylı eyni anda yenidən adlandırma
-- Faylları kopyalama və yenidən adlandırma
-- Müəyyən mətni ehtiva edən faylları silmə
-- Çoxdilli dəstək (İngiliscə, Türkcə, Azərbaycanca, İspanca, Rusca, Çincə)
+## 🚀 Əsas Xüsusiyyətlər
 
-## Quraşdırma
+### 📁 Ağıllı Qovluq Naviqasiyası
+- **Sürətli Giriş Paneli:** Masaüstü, Sənədlər, Yükləmələr, Musiqi, Şəkillər və Videolara bir klik ilə çatın
+- **Xüsusi Qovluq Seçimi:** Sisteminizdəki istənilən qovluğu seçin
 
-1. Bu reponu klonlayın:
+### 🔍 Canlı Axtarış və Önizləmə
+- **Ani Filtrasiya:** Yazdıqca faylları axtarın
+- **Canlı Əməliyyat Önizləməsi:** Əməliyyatdan əvvəl neçə faylın təsirləndiyini görün
+
+### 📝 Toplu Adlandırma
+- **Tap və Əvəz et:** Bir çox fayl adındakı mətni dəyişdirin
+
+### 📋 Kopyala və Adlandır
+- **Orijinalları Qoruyun:** Dəyişdirilmiş adlarla kopiyalar yaradın
+
+### 🗑️ Təhlükəsiz Silmə
+- **Nümunə Uyğunlaşdırma:** Xüsusi mətn ehtiva edən faylları silin
+- **Təsdiq Dialoqu:** Silmədən əvvəl bütün faylları siyahıya alır
+
+### 🌍 Çoxdilli Dəstək (6 Dil)
+English 🇬🇧 | Türkçe 🇹🇷 | Azərbaycanca 🇦🇿 | Español 🇪🇸 | Русский 🇷🇺 | 中文 🇨🇳
+
+---
+
+## 🛠️ Quraşdırma
 
 ```bash
-git clone https://github.com/hamer1818/file-processor.git
-```
-
-2. Lazımi asılılıqları yükləyin:
-
-```bash
+git clone https://github.com/hamer1818/O-File-Process.git
+cd O-File-Process
+python -m venv venv
+.\venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-```
-
-## İstifadə
-
-1. Tətbiqi işə salın:
-
-```bash
 python main.py
 ```
 
-2. Qovluq seçin
-3. Mövcud funksiyalar:
-   - Faylları filtrlə: Filtr qutusuna mətn daxil edin və "Apply Filter" düyməsinə klikləyin
-   - Faylları yenidən adlandır: "köhnə yeni" daxil edin və "Rename Files" düyməsinə klikləyin
-   - Faylları kopyala və yenidən adlandır: "köhnə yeni" daxil edin və "Copy and Rename Files" düyməsinə klikləyin
-   - Faylları sil: Uyğun mətni daxil edin və "Delete Files" düyməsinə klikləyin
+---
 
-## Ekran Görüntüləri
+## 📄 Lisenziya
 
-[Ekran görüntülərini buraya əlavə edin]
+Bu layihə **MIT Lisenziyası** altında lisenziyalanıb.
 
-## Tələblər
-
-- Python 3.6+
-- PyQt6
-
-## Lisenziya
-
-Bu layihə MIT Lisenziyası altında paylaşılır - [LICENSE](LICENSE) faylına baxın.
+*Tərtibatçı: [Hamer1818](https://github.com/hamer1818)*

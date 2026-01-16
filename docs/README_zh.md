@@ -1,56 +1,51 @@
 # O File Processor
 
-使用 PyQt6 创建的多语言文件管理应用程序，可让您轻松管理目录中的文件。
+**O File Processor** 是一款基于 **PyQt6** 的现代桌面应用程序，用于专业文件管理。采用清晰的 **MVC 架构**，提供批量重命名、复制和安全删除功能，配备直观的3面板界面。
 
-[English](../README.md) | [Türkçe](README_tr.md) | [Azərbaycanca](README_az.md) | [Español](README_es.md) | [Русский](README_ru.md)
+[![GitHub](https://img.shields.io/badge/GitHub-hamer1818%2FO--File--Process-blue?logo=github)](https://github.com/hamer1818/O-File-Process)
 
-## 功能特点
+---
 
-- 按名称筛选文件
-- 批量重命名文件
-- 复制和重命名文件
-- 删除包含特定文本的文件
-- 多语言支持（英语、土耳其语、阿塞拜疆语、西班牙语、俄语、中文）
+## 🚀 主要功能
 
-## 安装
+### 📁 智能文件夹导航
+- **快速访问侧边栏：** 一键访问桌面、文档、下载、音乐、图片和视频
+- **自定义文件夹选择：** 浏览并选择任意目录
 
-1. 克隆此仓库：
+### 🔍 实时搜索和预览
+- **即时过滤：** 输入时搜索文件
+- **实时操作预览：** 执行前查看受影响的文件数量
+
+### 📝 批量重命名
+- **查找和替换：** 一次替换多个文件名中的特定文本
+
+### 📋 复制并重命名
+- **保留原件：** 创建具有修改名称的副本
+
+### 🗑️ 安全删除
+- **模式匹配：** 删除包含特定文本的文件
+- **确认对话框：** 删除前列出所有文件
+
+### 🌍 多语言支持（6种语言）
+English 🇬🇧 | Türkçe 🇹🇷 | Azərbaycanca 🇦🇿 | Español 🇪🇸 | Русский 🇷🇺 | 中文 🇨🇳
+
+---
+
+## 🛠️ 安装
 
 ```bash
-git clone https://github.com/hamer1818/file-processor.git
-```
-
-2. 安装所需依赖：
-
-```bash
+git clone https://github.com/hamer1818/O-File-Process.git
+cd O-File-Process
+python -m venv venv
+.\venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-```
-
-
-## 使用方法
-
-1. 启动应用程序：
-
-```bash
 python main.py
 ```
 
-2. 选择目录
-3. 可用功能：
-   - 筛选文件：在筛选框中输入文本，然后点击 "Apply Filter"
-   - 重命名文件：输入 "旧名称 新名称" 然后点击 "Rename Files"
-   - 复制并重命名文件：输入 "旧名称 新名称" 然后点击 "Copy and Rename Files"
-   - 删除文件：输入匹配文本，然后点击 "Delete Files"
+---
 
-## 截图
+## 📄 许可证
 
-[在此添加截图]
+本项目采用 **MIT 许可证**。
 
-## 系统要求
-
-- Python 3.6+
-- PyQt6
-
-## 许可证
-
-本项目采用 MIT 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
+*开发者: [Hamer1818](https://github.com/hamer1818)*
